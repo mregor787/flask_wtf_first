@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>{{ param['title'] }}</title>
+{% endblock %}
+
+{% block content %}
+    {% for key in param %}
+        {% if key != 'title' %}
+            <h4 class="auto_answer_form">{{ param[key][0] }} {{ param[key][1] }}</h4>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

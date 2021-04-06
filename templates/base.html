@@ -6,7 +6,8 @@
         rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
         crossorigin="anonymous">
         <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
-        <title>{{ title }}</title>
+        {% block title %}
+        {% endblock %}
     </head>
     <body>
         <h1>Миссия Колонизация Марса</h1>
